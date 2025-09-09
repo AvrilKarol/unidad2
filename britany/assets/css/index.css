@@ -11,10 +11,21 @@ video {
   margin: 0 auto;
 }
 
-.imagen {
-  width: 200px;
-  height: 200px;
+.card.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 20px;
+  min-height: 220px;
+  height: 100%;
+}
+.card.flex-row .imagen {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 0.5rem;
+  margin-left: 15px;
 }
 
 .card img {
