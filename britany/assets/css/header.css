@@ -1,0 +1,64 @@
+:root {
+  --color1: #ffac66;
+  --color2: #fff3e7;
+  --color3: #283475;
+}
+
+header {
+  background: linear-gradient(90deg, var(--color1), var(--color3));
+  padding: 30px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color2);
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 9vh;
+}
+
+.foto {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: -40px;
+}
+
+.nav-link {
+  color: #feffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #def2f1;
+  text-decoration: none;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .empresa {
+    font-size: 1.8rem;
+  }
+
+  .foto {
+    max-width: 300px;
+  }
+}

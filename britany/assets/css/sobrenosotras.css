@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e6e; /* Color de fondo cálido */
+  color: #030303;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h6 {
+  color: #ffac66;
+}
+/* Sección Origen */
+.Origen .story-content {
+  background: #fff; /* Fondo blanco para el contenido */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.Origen h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffac66; /* Título con color oscuro */
+}
+
+.Origen p {
+  color: #555; /* Texto en color oscuro para buen contraste */
+}
+
+/* Sección Valores */
+.Valores {
+  margin-top: 3rem;
+}
+
+.Valores h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffd1a3; /* Título en color oscuro */
+  font-size: 2rem;
+}
+
+.valores-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.valor {
+  background: #fff; /* Fondo suave para cada valor */
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.valor h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffac66; /* Títulos de los valores en color oscuro */
+}
+
+.valor p {
+  font-size: 0.95rem;
+  color: #555; /* Texto en tono suave de gris-azul */
+}
+
+/* Sección Founders */
+.founders {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1100px;
+}
+
+.founders h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #283475); /* Fondo degradado suave */
+  color: #ffffff; /* Color de texto del título */
+  padding: 1rem 0;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.founder-card {
+  background: #fff; /* Fondo blanco para las tarjetas */
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.founder-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.founder-card h3 {
+  color: #ffac66; /* Nombre del fundador en color oscuro */
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.founder-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Sección de fondo para otras áreas */
+.founder-card:nth-child(odd) {
+  background: #fff; /* Fondos alternos para tarjetas */
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
