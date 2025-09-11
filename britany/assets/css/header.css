@@ -1,11 +1,11 @@
 :root {
-  --color1: #ffac66;
-  --color2: #fff3e7;
-  --color3: #283475;
+  --color1: #ff8a5c;
+  --color2: #f9fafb;
+  --color3: #2c3e50;
 }
 
 header {
-  background: linear-gradient(90deg, var(--color1), var(--color3));
+  background: linear-gradient(90deg, var(--color1), #aa8b76);
   padding: 30px;
   text-align: center;
   color: white;

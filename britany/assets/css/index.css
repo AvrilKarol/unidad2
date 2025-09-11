@@ -49,7 +49,7 @@ video {
   font-size: 2.2rem;
   margin-bottom: -3rem;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(90deg, #283475); /* Fondo degradado suave */
+  background: linear-gradient(90deg, #fdc986); /* Fondo degradado suave */
   color: #ffffff; /* Color de texto del título */
   padding: 1rem 0;
 }
