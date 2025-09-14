@@ -31,6 +31,12 @@
   color: var(--color-light);
 }
 
+.p-4-bg-light-rounded-shadow-sm {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .story-content {
   font-family: var(--font-accent);
   font-optical-sizing: auto;
