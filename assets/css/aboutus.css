@@ -1,3 +1,14 @@
+:root {
+  --color-primary: #ffac66;
+  --color-secondary: #ffd1a3;
+  --color-dark: #262047;
+  --color-text: #555;
+  --color-light: #fff;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-accent: "Playfair Display", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +16,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #e6e; /* Color de fondo cálido */
+  font-family: var(--font-body);
+  background: #e6e;
   color: #030303;
   line-height: 1.6;
 }
@@ -16,47 +27,41 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-
-.container h6 {
-  color: #ffac66;
-  border-radius: 200px;
-}
-/* Sección Origen */
 .Origen .story-content {
-  background: #262047;
+  background: var(--color-dark);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
   text-align: justify;
   margin-bottom: 20px;
+  color: var(--color-light); /* Añadido para mejor contraste */
 }
 
 .story-content {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-accent);
   font-optical-sizing: auto;
   font-weight: 100;
 }
 .Origen h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #ffac66; /* Título con color oscuro */
+  color: var(--color-primary);
 }
-
 .Origen p {
-  color: #ffffff;
+  color: var(--color-light);
 }
 
+/* ---- 4. Sección Valores ---- */
 .Valores {
   margin-top: 3rem;
 }
-
 .Valores h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #ffd1a3;
+  color: var(--color-secondary);
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-heading);
 }
 
 .valores-content {
@@ -64,31 +69,27 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 .valor {
-  background: #fff;
-  border-radius: 20px;
+  background: var(--color-light);
+  border-radius: 15px; /* Valor más consistente */
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .valor:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-
 .valor h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #ffac66;
-  border-radius: 50px;
+  color: var(--color-primary);
+  border-radius: 15px;
 }
-
 .valor p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--color-text);
 }
 
 .founders {
@@ -96,57 +97,49 @@ body {
   margin: 3rem auto;
   max-width: 1100px;
 }
-
 .founders h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(90deg, #fdc986);
-  color: #ffffff;
-  padding: 1rem 0;
-  max-width: 300px;
-  justify-content: center;
+  font-family: var(--font-heading);
+  background-image: linear-gradient(90deg, #fdc986, #f38f4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px solid #fdc986;
 }
 
 .founders-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   justify-content: center;
 }
-
 .founder-card {
-  background: #fff;
+  background: var(--color-light);
   padding: 1.2rem;
   border-radius: 15px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-body);
   max-width: 300px;
 }
-
 .founder-card:hover {
   transform: translateY(-8px);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
-
 .founder-card h3 {
-  color: #ffac66;
+  color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  font-family: "Poppins", sans-serif;
-  border-radius: 20px;
-  justify-content: center;
+  font-family: var(--font-heading);
 }
-
 .founder-card p {
-  color: #555;
+  color: var(--color-text);
   font-size: 1rem;
   line-height: 1.6;
-}
-
-.founder-card:nth-child(odd) {
-  background: #fff;
 }
 
 .imagen {
