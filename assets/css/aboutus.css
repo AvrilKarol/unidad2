@@ -9,6 +9,16 @@
   --font-accent: "Playfair Display", serif;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 23%;
+}
 * {
   margin: 0;
   padding: 0;
