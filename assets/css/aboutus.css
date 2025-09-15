@@ -9,13 +9,6 @@
   --font-accent: "Playfair Display", serif;
 }
 
-.container-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .item {
   width: 23%;
 }
@@ -115,9 +108,9 @@
 
 .founders-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 .founder-card {
   background: var(--color-light);
